@@ -7,14 +7,16 @@
       <div><button mat-raised-button color="primary" routerLink="/user"> Add data</button></div>
     </div>
     <table class="table-foods">
-      <!-- <thead>
+      <thead>
         <tr>
           <th *ngFor="let col of columnTable">
             {{col}}
           </th>
         </tr>
-      </thead> -->
+      </thead>
+      <tbody>
+        <app-user-card [users]="users"> </app-user-card>
+      </tbody>
     </table>
-    <app-user-card *ngFor="let acc of users;" [user]="acc"> </app-user-card>
   </div>
 </body>

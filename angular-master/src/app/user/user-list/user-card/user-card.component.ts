@@ -22,6 +22,7 @@ export class UserCardComponent implements OnInit {
   titlePage = 'List Student'
 
   @Input() user: any;
+  @Input() users: any;
 
   selectData(data1: User){
     this.data.setSelectedData(data1);

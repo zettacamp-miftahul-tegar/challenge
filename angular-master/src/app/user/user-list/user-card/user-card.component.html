@@ -1,24 +1,16 @@
 
-  <table class="table-foods">
-      <thead>
-          <tr>
-              <th *ngFor="let col of columnTable">
-                  {{col}}
-              </th>
+    
+        <tbody>
+          <tr *ngFor="let user of users;">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.genders}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.position}}</td>
+            <td>{{user.status}}</td>
+            <td><button mat-raised-button color="accent" routerLink="./admin/add-foods"> Edit</button></td>
+            <td><button mat-raised-button color="warn" routerLink="./admin/add-foods"> Hapus</button></td>
           </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{user.id}}</td>
-          <td>{{user.name}}</td>
-          <td>{{user.age}}</td>
-          <td>{{user.genders}}</td>
-          <td>{{user.email}}</td>
-          <td>{{user.position}}</td>
-          <td>{{user.status}}</td>
-          <td><button mat-raised-button color="accent" routerLink="./admin/add-foods"> Edit</button></td>
-          <td><button mat-raised-button color="warn" routerLink="./admin/add-foods"> Hapus</button></td>
-        </tr>
-      </tbody>
-  </table>
+        </tbody>  
 
